@@ -1,0 +1,23 @@
+==================================================
+ENTERPRISE CLOUD PLATFORM - TECHNICAL TROUBLESHOOTING GUIDE
+==================================================
+
+1. OVERVIEW
+This document provides guidelines for resolving deployment and database connection issues in Enterprise Cloud Engine v4.2.
+
+2. ERROR CODE 504: GATEWAY TIMEOUT
+- Cause: The API Gateway did not receive a timely response from the upstream database or microservice.
+- Solution: 
+  Step 1: Increase the connection timeout in proxy_config.yaml from 30s to 60s.
+  Step 2: Restart the API gateway using the command `service gateway restart`.
+  Step 3: Clear the Redis cache using `redis-cli flushall`.
+
+3. ERROR CODE 403: ACCESS DENIED ON VECTOR DB
+- Cause: Authentication token expired or Pinecone/Chroma API key is invalid.
+- Solution: 
+  Step 1: Regenerate JWT token via OAuth server.
+  Step 2: Ensure environment variable VECTOR_DB_KEY is loaded properly in .env file.
+
+4. SYSTEM SCALABILITY PROTOCOL
+- Auto-scaling triggers when CPU utilization exceeds 85% for 5 consecutive minutes.
+- Maximum cluster pod limit is set to 20 instances.

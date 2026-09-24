@@ -1,0 +1,12 @@
+# Sensitive API Keys
+.env
+
+# Python Cache & Environments
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Editor files
+.vscode/
+.DS_Store

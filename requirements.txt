@@ -1,0 +1,8 @@
+langchain
+langchain-community
+chromadb
+crewai
+crewai-tools
+streamlit
+pydantic
+python-dotenv
