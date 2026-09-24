@@ -45,9 +45,9 @@ A comprehensive 20-section technical report detailing problem analysis, system t
    Create a
    .env file in the root folder and add your Groq API key:
 
-```env
-GROQ_API_KEY=your_actual_groq_api_key_here
-```
+   ```env
+   GROQ_API_KEY=your_actual_groq_api_key_here
+   ```
 
 3. **Install Dependencies:**
 
@@ -58,7 +58,7 @@ GROQ_API_KEY=your_actual_groq_api_key_here
 
 4. **Run the Application:**
 
-```bash
-python -m streamlit run app.py
+   ```bash
+   python -m streamlit run app.py
 
-```
+   ```
