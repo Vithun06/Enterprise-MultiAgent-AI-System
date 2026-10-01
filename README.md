@@ -70,3 +70,8 @@ A comprehensive 20-section technical report detailing problem analysis, system t
    python -m streamlit run app.py
 
    ```
+🚀 Live Demo & Author
+🌐 Live Streamlit Application: Enterprise Multi-Agent System
+👤 Author & Creator: Vithun T R (AI Systems Engineer | Multi-Agent RAG Architect)
+🔗 Professional Profiles: LinkedIn | GitHub
+
