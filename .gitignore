@@ -10,3 +10,5 @@ venv/
 # Editor files
 .vscode/
 .DS_Store
+# Local Vector Database
+vector_db/
