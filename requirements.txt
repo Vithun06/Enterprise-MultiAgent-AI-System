@@ -1,7 +1,8 @@
 langchain
 langchain-community
 langchain-groq
-chromadb==0.4.24
+langchain-chroma
+chromadb
 crewai
 crewai-tools
 streamlit
